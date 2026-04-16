@@ -1,1 +1,0 @@
-# chapire-shop

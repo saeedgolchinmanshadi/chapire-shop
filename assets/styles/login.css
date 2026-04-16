@@ -1,0 +1,94 @@
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/IRANYekan/eot/IRANYekanWeb.eot);
+  src:
+    url(../fonts/IRANYekan/eot/IRANYekanWeb.eot?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/IRANYekan/woff2/IRANYekanWeb.woff2) format("woff2"),
+    url(../fonts/IRANYekan/woff/IRANYekanWeb.woff) format("woff"),
+    url(../fonts/IRANYekan/ttf/IRANYekanWeb.ttf) format("truetype");
+}
+* {
+  font-family: IRANYekan;
+}
+body {
+  background: #e8e8e8;
+}
+.login h1 a {
+  background: #fff url(../images/logo.png) no-repeat top;
+  width: 320px;
+  margin: 0;
+  background-size: 180px;
+  background-position: center 10px;
+  border-radius: 10px 10px 0 0;
+  color: #949494;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 20px;
+  line-height: 3;
+  text-indent: inherit;
+}
+.login #login_error,
+.login .message,
+.login .success {
+  margin: 0;
+}
+.login form {
+  margin: 0;
+  border: 0;
+  padding: 26px;
+  padding-top: 0;
+  border-radius: 0 0 10px 10px;
+}
+.login form .input,
+.login form input[type="checkbox"],
+.login input[type="text"] {
+  font-size: 13px;
+  background: #f1f3f4;
+  padding: 10px;
+  border-radius: 22px;
+  outline: none;
+  border: none;
+}
+.login label {
+  color: #a1acb2;
+  font-size: 13px;
+}
+#login form p:first-child,
+#login form p.forgetmenot {
+  padding-top: 18px;
+}
+.login .forgetmenot label,
+.login .pw-weak label {
+  font-size: 11px;
+  vertical-align: middle;
+}
+.wp-core-ui .button-group.button-large .button,
+.wp-core-ui .button.button-large {
+  background: #3db8da;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 40px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 24px;
+  line-height: normal;
+}
+.login #backtoblog,
+p.message.register,
+#reg_passmail,
+br.clear {
+  display: none;
+}
+input[type="checkbox"]:checked::before {
+  margin: -0.15rem -0.15rem 0 0;
+}
+
+.login h1 a:focus {
+  box-shadow: none;
+}

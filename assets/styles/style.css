@@ -1,0 +1,237 @@
+﻿@font-face {
+  font-family: "IRANYekan";
+  src:
+    url("../fonts/IRANYekan/woff2/IRANYekanWeb.woff2")
+      format("woff2-variations"),
+    url("../fonts/IRANYekan/woff2/IRANYekanWeb.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Colors */
+
+  /* Typography */
+
+  /* Layout */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  background-color: var(--clr-bg-body);
+  color: var(--clr-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-secondary);
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--clr-text-muted);
+}
+
+.hide {
+  display: none;
+}
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Creates 12 equal columns */
+  gap: 24px;
+}
+
+/* Column Spans */
+.span-4 {
+  grid-column: span 4; /* Occupies 4 columns (1/3 of width) */
+}
+
+.span-6 {
+  grid-column: span 6; /* Occupies 6 columns (1/2 of width) */
+}
+
+.span-8 {
+  grid-column: span 8; /* Occupies 8 columns (2/3 of width) */
+}
+
+.span-12 {
+  grid-column: span 12; /* Occupies full width */
+}
+
+.partner-separator {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  padding: 0 4px;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  fill: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.card-box {
+  background-color: var(--clr-bg-surface);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 32px;
+}
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Home Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Hero Section */
+
+/* Sections */
+
+/* --- Breadcrumb (RankMath) --- */
+
+/* Single 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Related */
+
+/* Archive 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Search 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Pagination
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* 404
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md,
+  .visible-lg,
+  .visible-sm,
+  .visible-xs {
+    display: none;
+  }
+  .visible-md,
+  .hidden-lg,
+  .hidden-sm,
+  .hidden-xs {
+    display: block;
+  }
+  .container {
+    width: 950px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm,
+  .visible-lg,
+  .visible-md,
+  .visible-xs {
+    display: none;
+  }
+  .visible-sm,
+  .hidden-lg,
+  .hidden-md,
+  .hidden-xs {
+    display: block;
+  }
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .colm {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hidden-xs,
+  .visible-lg,
+  .visible-md,
+  .visible-sm {
+    display: none;
+  }
+  .visible-xs,
+  .hidden-lg,
+  .hidden-md,
+  .hidden-sm {
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+  }
+  .colm {
+    width: 100%;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+}
